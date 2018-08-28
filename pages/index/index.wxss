@@ -1,0 +1,140 @@
+/* pages/index/index.wxss */
+.head-view{
+  width: 100%;
+  height: 200rpx;
+  background-color: #ff5959;
+  color: #fff;
+  display: flex;
+  padding-bottom: 50rpx;
+  font-size: 50rpx;
+  font-weight: 999;
+  align-items: center;
+  justify-content: center;
+}
+.body-view{
+  width: 100%;
+  height: 500rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffad5a;  
+  color: #fff;
+}
+.body-lab{
+  margin: 30rpx;
+  font-size: 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+.body-lab-input{
+  padding: 2rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border: 4rpx solid #fff;
+  border-radius: 10rpx;
+  height: 50rpx;
+  width: 340rpx;
+}
+.body-lab-code{
+  margin: 30rpx;
+  font-size: 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+.body-lab-input-code{
+  padding: 2rpx;
+  line-height: 30rpx;
+  font-size: 34rpx;
+  border: 4rpx solid #fff;
+  border-radius: 10rpx;
+  height: 40rpx;
+  width: 220rpx;
+}
+.code-img{
+  margin-left: 16rpx;
+  width: 120rpx;
+  height: 60rpx;
+}
+.lab-but{
+  width: 200rpx;
+  color: #4f9da6;
+}
+
+.foot-view{
+  width: 100%;
+  height: 390rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4f9da6;  
+  color: #fff;
+}
+.foot-title{
+  font-size: 50rpx;
+  font-weight: 999;
+}
+
+.foot-form{
+  width: 100%;
+  height: 680rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a0841;  
+  color: #fff;
+}
+.foot-input{
+  margin: 40rpx;
+  padding: 2rpx;
+  line-height: 40rpx;
+  font-size: 34rpx;
+  border: 4rpx solid #fff;
+  border-radius: 10rpx;
+  height: 50rpx;
+  width: 500rpx;
+}
+.foot-picker{
+  margin: 40rpx;
+  padding: 2rpx;
+  line-height: 40rpx;
+  font-size: 34rpx;
+  border: 4rpx solid #fff;
+  border-radius: 10rpx;
+  height: 50rpx;
+  width: 500rpx;
+}
+.btn-area{
+  display: flex;
+  flex-direction: row;
+}
+.foot-but{
+  width: 200rpx;
+  color: #ff5959;
+}
+.GeiZan{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 140rpx;
+  margin: 30rpx;
+}
+.kefu{
+  width: 250rpx;
+  font-size: 30rpx;
+  height: 80rpx;
+}
+.zanshang{
+  padding-top: 10rpx;
+  color: #ffad5a;
+  width: 300rpx;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  margin: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

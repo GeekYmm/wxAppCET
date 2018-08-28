@@ -1,0 +1,65 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+  <view class='head-view'>四六级成绩查询</view>
+
+  <view class='body-view'>
+    <view class='body-lab'>
+      <view>你的姓名：</view>
+      <input class='body-lab-input' type='text' maxlength="5" value='' bindinput='getUserName'></input>
+    </view>
+
+    <view class='body-lab'>
+      <view>准考证号：</view>
+      <input class='body-lab-input' maxlength="15" type='number' value='' bindinput='getUserId'></input>
+    </view>
+
+    <view wx:if="{{isCode}}" class='body-lab-code'>
+      <view>验证码：</view>
+      <input class='body-lab-input-code' maxlength="4" value='' bindinput='getCode'></input>
+      <image class='code-img' src="{{img_url}}"></image>
+    </view>
+
+    <view style='height:20rpx;'></view>
+    <button class='lab-but' size='mini' bindtap='subForm'>查询成绩</button>
+  </view>
+
+  <view class='foot-view'>
+    <view class='foot-title'>没有准考证也能查成绩</view>
+  </view>
+
+  <form class='foot-form' bindsubmit="formSubmit" bindreset="formReset">
+    <input class='foot-input' name="name" placeholder="请输入名字" maxlength='5'></input>
+    <input class='foot-input' name="school" placeholder="请输入学校" maxlength='20'></input>
+    <view class='foot-picker'>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" name="id_2">
+        <view class="picker">
+          考试年份：{{array[index]}}年
+        </view>
+      </picker>
+    </view>
+    <view class='foot-picker'>
+      <picker bindchange="bindKGPickerChange" value="{{KGindex}}" range="{{KGarray}}" name="id_3">
+        <view class="picker">
+          选择考季：{{KGarray[KGindex]}}
+        </view>
+      </picker>
+    </view>
+    <view class='foot-picker'>
+      <picker bindchange="bindSLPickerChange" value="{{SLindex}}" range="{{SLarray}}" name="id_4">
+        <view class="picker">
+          选择四级/六级：{{SLarray[SLindex]}}
+        </view>
+      </picker>
+    </view>
+    <view class="btn-area">
+      <button class='foot-but' formType="submit" size='mini'>提交</button>
+      <!-- <button class='foot-but' formType="reset" size='mini'>重置</button> -->
+    </view>
+  </form>
+  <view class='GeiZan'>
+    <button class='kefu' open-type='contact' size='mini'>联系客服</button>
+    <view class='zanshang'>
+      <navigator target="miniProgram" open-type="navigate" app-id="wx18a2ac992306a5a4" path="pages/apps/largess/detail?id=rkY%2F6EIyQmk%3D" version="release">觉得不错去赞赏</navigator>
+    </view>
+  </view>
+</view>

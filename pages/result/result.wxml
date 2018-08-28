@@ -1,0 +1,16 @@
+<!--pages/result/result.wxml-->
+<view class='container'>
+  <view class='head-title'>大学英语四级考试成绩单</view>
+  <image class='head-img' src='../../images/cet.png'></image>
+  <view class='head'>
+    <view class='head-userinfo'>姓名：         {{name}}</view>
+    <view class='head-userinfo'>学校：   {{school}}</view>
+    <view class='head-userinfo'>准考证号: {{number}}</view>
+  </view>
+  <view class='body'>
+    <view class='result'>听力：   {{hearing}}</view>
+    <view class='result'>阅读：   {{reading}}</view>
+    <view class='result'>写作和翻译： {{writing}}</view>
+    <view class='result-total'>总分：    {{total}}</view>
+  </view>
+</view>
